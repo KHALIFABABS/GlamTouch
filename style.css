@@ -132,6 +132,28 @@ section.appear { opacity: 1; transform: translateY(0); }
   padding: 12px 18px; border-radius: 50px; text-decoration: none; font-size: 18px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3); z-index: 1000; transition: var(--transition);
 }
+.map-container {
+  margin-top: 30px;
+}
+
+.directions-btn {
+  margin-top: 15px;
+}
+
+.directions-btn a {
+  display: inline-block;
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.directions-btn a:hover {
+  background-color: #e05b9b;
+}
 #whatsappBtn:hover { background-color: #1ebe57; }
 
 .social-links { margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; z-index: 1; }
