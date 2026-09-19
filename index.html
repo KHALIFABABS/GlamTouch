@@ -3,20 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GlamTouch - Salon de coiffure féminin</title>
+  <meta name="description" content="GlamTouch Nappy - Salon de coiffure féminin à Dakar. Twist, lissage, soins capillaires. Réservez en ligne !" />
+  <title>GlamTouch Nappy - Salon de coiffure féminin</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
+
+  <!-- BOUTON MODE SOMBRE -->
+  <button id="darkModeToggle" aria-label="Basculer mode sombre">
+    <i class="fas fa-moon"></i>
+  </button>
+
   <!-- HEADER -->
   <header>
-    <h1>GlamTouch Nappy</h1>
+    <h1>GlamTouch</h1>
+    <button class="menu-toggle" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
     <nav>
       <ul>
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#temoignages">Avis</a></li>
+        <li><a href="#reservation">Réservation</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -26,86 +41,274 @@
   <section id="accueil" class="hero">
     <div class="hero-content">
       <h2>Sublimez votre beauté, révélez votre élégance</h2>
-      <p>Un salon où chaque femme se sente unique, belle et confiante.</p>
-      <button>Prendre rendez-vous</button>
+      <p>Un salon où chaque femme se sent unique, belle et confiante.</p>
+      <div class="hero-buttons">
+        <button class="btn-rdv">Prendre rendez-vous</button>
+        <a href="#services" class="btn-secondary">Voir nos services</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
     </div>
   </section>
 
   <!-- À PROPOS -->
   <section id="apropos" class="about">
     <div class="about-img">
-      <img src="IMAGE/3.jpeg" alt="Salon GlamTouch">
+      <img src="IMAGE/3.jpeg" alt="Salon GlamTouch" loading="lazy">
     </div>
     <div class="about-text">
-      <h2>À propos de GlamTouch</h2>
-      <p>Chez GlamTouch, nos coiffeuses passionnées vous accueillent dans un cadre élégant et apaisant. Chaque soin est pensé pour sublimer vos cheveux selon vos envies.</p>
+      <span class="section-tag">À propos</span>
+      <h2>Bienvenue chez GlamTouch</h2>
+      <p>Chez GlamTouch Nappy, nos coiffeuses passionnées vous accueillent dans un cadre élégant et apaisant. Chaque soin est pensé pour sublimer vos cheveux selon vos envies.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <strong>+500</strong>
+          <span>Clientes satisfaites</span>
+        </div>
+        <div class="stat">
+          <strong>5★</strong>
+          <span>Note moyenne</span>
+        </div>
+        <div class="stat">
+          <strong>3+</strong>
+          <span>Ans d'expérience</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- SERVICES -->
   <section id="services" class="services">
+    <span class="section-tag">Nos prestations</span>
     <h2>Nos Services</h2>
     <div class="service-list">
       <div class="service">
-        <img src="IMAGE/4.jpeg" alt="Twist">
+        <img src="IMAGE/4.jpeg" alt="Twist" loading="lazy">
         <h3>Twist</h3>
         <p>Des styles uniques et modernes adaptés à votre personnalité.</p>
+        <span class="service-price">À partir de 5 000 FCFA</span>
       </div>
       <div class="service">
-        <img src="IMAGE/5.jpeg" alt="Lissage">
+        <img src="IMAGE/5.jpeg" alt="Lissage" loading="lazy">
         <h3>Lissage</h3>
         <p>Un lissage parfait pour une chevelure douce, brillante et disciplinée.</p>
+        <span class="service-price">À partir de 15 000 FCFA</span>
       </div>
       <div class="service">
-        <img src="IMAGE/6.jpeg" alt="Soin capillaire">
+        <img src="IMAGE/6.jpeg" alt="Soin capillaire" loading="lazy">
         <h3>Soin capillaire</h3>
         <p>Des soins nourrissants pour redonner vie à vos cheveux.</p>
+        <span class="service-price">À partir de 8 000 FCFA</span>
+      </div>
+      <div class="service">
+        <img src="IMAGE/11.jpg" alt="Tresses" loading="lazy">
+        <h3>Tresses</h3>
+        <p>Tresses collées, nattes, box braids pour un look affirmé.</p>
+        <span class="service-price">À partir de 10 000 FCFA</span>
       </div>
     </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="galerie" class="gallery">
+    <span class="section-tag">Nos réalisations</span>
+    <h2>Galerie Photos</h2>
+    <div class="gallery-grid">
+      <img src="IMAGE/3.jpeg" alt="Réalisation 1" loading="lazy">
+      <img src="IMAGE/4.jpeg" alt="Réalisation 2" loading="lazy">
+      <img src="IMAGE/5.jpeg" alt="Réalisation 3" loading="lazy">
+      <img src="IMAGE/6.jpeg" alt="Réalisation 4" loading="lazy">
+      <img src="IMAGE/11.jpg" alt="Réalisation 5" loading="lazy">
+      <img src="IMAGE/9.jpg" alt="Réalisation 7" loading="lazy">
+      <img src="IMAGE/10.jpg" alt="Réalisation 8" loading="lazy">
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section id="temoignages" class="testimonials">
+    <span class="section-tag">Elles nous font confiance</span>
+    <h2>Ce que disent nos clientes</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <div class="stars">★★★★★</div>
+        <p>"Un salon magnifique ! Binta est une vraie artiste. Mes twists n'ont jamais été aussi beaux."</p>
+        <h4>— Aïssatou D.</h4>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Ambiance chaleureuse, service impeccable. Je recommande à toutes les femmes qui veulent se sentir belles."</p>
+        <h4>— Fatou N.</h4>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Le lissage a duré des semaines ! Un vrai savoir-faire. Merci GlamTouch !"</p>
+        <h4>— Mariama S.</h4>
+      </div>
+    </div>
+    <div class="testimonial-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <!-- RÉSERVATION -->
+  <section id="reservation" class="reservation">
+    <span class="section-tag">Prenez rendez-vous</span>
+    <h2>Réservez votre créneau</h2>
+    <p class="reservation-intro">Remplissez le formulaire ci-dessous, nous vous confirmerons par WhatsApp.</p>
+
+    <form id="bookingForm" class="booking-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nom">Nom complet *</label>
+          <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+        </div>
+        <div class="form-group">
+          <label for="telephone">Téléphone *</label>
+          <input type="tel" id="telephone" name="telephone" required placeholder="+221 XX XXX XX XX">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="service">Service souhaité *</label>
+          <select id="service" name="service" required>
+            <option value="">-- Choisir un service --</option>
+            <option value="Twist">Twist</option>
+            <option value="Lissage">Lissage</option>
+            <option value="Soin capillaire">Soin capillaire</option>
+            <option value="Tresses">Tresses</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Date souhaitée *</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="heure">Heure souhaitée *</label>
+          <input type="time" id="heure" name="heure" required>
+        </div>
+        <div class="form-group">
+          <label for="personnes">Nombre de personnes</label>
+          <input type="number" id="personnes" name="personnes" min="1" value="1">
+        </div>
+      </div>
+      <div class="form-group full-width">
+        <label for="message">Message (optionnel)</label>
+        <textarea id="message" name="message" rows="4" placeholder="Précisez vos envies..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">
+        <i class="fab fa-whatsapp"></i> Envoyer ma réservation
+      </button>
+    </form>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
+    <span class="section-tag">Restons en contact</span>
     <h2>Contactez-nous</h2>
-    <p>Pour prendre rendez-vous ou nous suivre sur les réseaux sociaux :</p>
-    
-    <div class="social-links">
-      <a href="https://www.facebook.com/tonpage" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
-      <a href="https://www.instagram.com/glamtouchnappy" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://www.tiktok.com/@binette2829" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
-      <a href="https://www.snapchat.com/add/bsane4206" target="_blank" class="snapchat"><i class="fab fa-snapchat-ghost"></i> Snapchat</a>
-    </div>
-     <!-- Localisation -->
-  <div class="map-container">
-    <h3>Notre localisation</h3>
-    <p>Nous sommes situés à <strong>Liberté 6, Dakar – GlamTouch  Dakar</strong>.</p>
-    <iframe 
-       src="https://maps.app.goo.gl/UXbPyMeKVG8TZ4XT8" 
-      width="100%" 
-      height="350" 
-      style="border:0; border-radius: 15px; margin-top: 15px;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
-   <!-- Bouton Itinéraire -->
-    <div style="text-align:center; margin-top: 15px;">
-      <a href="https://maps.app.goo.gl/fDsS3DPWkA6BFWsr8" target="_blank" class="btn-itineraire">
-        <i class="fas fa-map-marker-alt"></i> Itinéraire vers Floshine Dakar
-      </a>
-    </div>
-  </div>
-  </div>
+    <p>Suivez-nous sur les réseaux sociaux pour ne rien manquer !</p>
 
-    <!-- WhatsApp flottant -->
-    <a href="https://wa.me/221774546185?text=Bonjour%20Binta,%20je%20veux%20prendre%20rendez-vous" target="_blank" id="whatsappBtn">
-      <i class="fab fa-whatsapp"></i> WhatsApp
-    </a>
+    <div class="social-links">
+      <a href="https://www.instagram.com/glamtouchnappy?stkn=MWE4Mmt2cGF1bW9haw==" target="_blank" rel="noopener" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.tiktok.com/@binette2829" target="_blank" rel="noopener" class="tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+
+    <div class="contact-info">
+      <p><i class="fas fa-phone"></i> <a href="tel:+221774546185" style="color:inherit;text-decoration:none;">+221 77 454 61 85</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> GlamTouche Nappy, Dakar</p>
+      <p><i class="fas fa-clock"></i> Lun - Sam : 9h - 20h</p>
+    </div>
+
+    <!-- CARTE GOOGLE MAPS -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.78835321475!2d-17.46641942511181!3d14.724554585776634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173ec2b87d60f%3A0x689e9f40a9303615!2sGlamTouche%20Nappy!5e0!3m2!1sfr!2ssn!4v1789848199542!5m2!1sfr!2ssn" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
   </section>
+
+  <!-- WHATSAPP FLOTTANT -->
+  <a href="https://wa.me/221774546185?text=Bonjour%20GlamTouch,%20je%20veux%20prendre%20rendez-vous" target="_blank" rel="noopener" id="whatsappBtn" aria-label="Contacter sur WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- CHATBOT -->
+  <button id="chatbotToggle" aria-label="Ouvrir le chat">
+    <i class="fas fa-comments"></i>
+  </button>
+
+  <div id="chatbot" class="chatbot">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <i class="fas fa-headset"></i>
+        <div>
+          <strong>GlamTouch</strong>
+          <small>En ligne</small>
+        </div>
+      </div>
+      <button id="chatbotClose" aria-label="Fermer le chat"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chatbot-body" id="chatbotBody">
+      <div class="bot-message">
+        Bonjour 👋 Je suis <strong>Glam</strong>, votre assistante virtuelle. Comment puis-je vous aider ?
+      </div>
+      <div class="chatbot-options">
+        <button data-reply="services">📋 Voir les services</button>
+        <button data-reply="tarifs">💰 Connaître les tarifs</button>
+        <button data-reply="rdv">📅 Prendre rendez-vous</button>
+        <button data-reply="horaires">🕐 Horaires d'ouverture</button>
+        <button data-reply="contact">📞 Nous contacter</button>
+      </div>
+    </div>
+    <div class="chatbot-footer">
+      <input type="text" id="chatbotInput" placeholder="Écrivez votre message...">
+      <button id="chatbotSend"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 GlamTouch - Créé avec ❤️ par Binta</p>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>GlamTouch</h3>
+        <p>Votre salon de coiffure féminin à Dakar. Beauté, élégance et savoir-faire.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#reservation">Réservation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone"></i> <a href="tel:+221774546185" style="color:inherit;text-decoration:none;">+221 77 454 61 85</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> GlamTouche Nappy, Dakar</p>
+      </div>
+      <div class="footer-col">
+        <h4>Suivez-nous</h4>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/glamtouchnappy?stkn=MWE4Mmt2cGF1bW9haw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@binette2829" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GlamTouch - Créé avec ❤️ par Binta</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
